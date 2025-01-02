@@ -3,6 +3,11 @@ loop.'''
 
 input_str=input("Enter a String : ")
 
-for s in input_str:
-    print(input_str[::-1])
-    break
+i=1
+rev_str=""
+while(i<=len(input_str)):
+    remainder=input_str[-1*i]
+    rev_str=rev_str + remainder 
+    i=i+1
+    
+print("Reversed String = ", rev_str)
